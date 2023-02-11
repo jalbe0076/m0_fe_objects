@@ -14,19 +14,23 @@ var foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
-
+foods.casavas = 5;
+console.log(foods);
 
 // -------------------
 // Part 2: Email
@@ -40,16 +44,23 @@ var foods = {
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
-
+var email = {
+  sender: "myEmail@gmail.com",
+  to: ["theirEmail@gmail.com"],
+  Cc: ["email1@gmail.com", "email2@gmail.com"],
+  Bcc: [],
+  subject: "One of my first objects"
+}
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(email));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.values(email));
 
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +110,29 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+var email = [
+  {
+    sender: "myEmail@gmail.com",
+    to: ["theirEmail@gmail.com"],
+    Cc: ["email1@gmail.com", "email2@gmail.com"],
+    Bcc: [],
+    subject: "One of my first objects"
+  },
+  {
+    sender: "myEmail@gmail.com",
+    to: "someonesEmail@gmail.com",
+    Cc: [],
+    Bcc: ["secretEmail@gmail.com"],
+    subject: "Resignation"
+  },
+  {
+    sender: "myEmail@gmail.com",
+    to: ["receiver@gmail.com", "receiver@outlook.ca"],
+    Cc: ["anEmail@domain.com"],
+    Bcc: [],
+    subject: "Part 3 completion"
+  }
+]
+
+console.log(email);
